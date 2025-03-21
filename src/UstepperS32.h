@@ -410,7 +410,7 @@ class UstepperS32
 	float maxVelocity;
 
 	/** These variables contain the maximum acceleration/deceleration in steps/s to be used. The
-     *  The variables are in units of ( 2^41 / |f_CLK|^2 ) * ( microsteps / s^2 ).
+     *  The variables are in units of ( |f_CLK|^2 / 2^41 ) * ( microsteps / s^2 ).
 	 *  can be set and read by the user of the library using the setMaxAcceleration() and setMaxDeceleration() functions,
      *  which take in values with units of ( fullsteps / s^2 ). */
 	float maxAcceleration;
